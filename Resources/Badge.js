@@ -41,7 +41,7 @@
  *     bottom     - integer  (Not used if top is present and valid)
  *     right      - integer  (Not used if left is present and valid)
  *     shape      - one of: [Badge.shape.ROUND, Badge.shape.SQUARE]  (default = ROUND)
- *     size       - one of: [Badge.size.TAB, Badge.size.APP, Badge.size.BIG, Badge.size.MAX]  (default = APP)
+ *     size       - one of: [Badge.size.TAB, Badge.size.APP, Badge.size.BIG, Badge.size.MAX]  (default = TAB)
  *     color      - one of: [Badge.color.RED, Badge.color.BLUE, Badge.color.GREEN, Badge.color.YELLOW]  (default = RED)
  *     useBorder  - boolean  (default = true)
  *     useShading - boolean  (default = true)
@@ -53,8 +53,8 @@
 
 // Predefined constants exposed to module users.
 exports.size = {
-	TAB : 18, // (Similar to the small iOS tab badge size)
-	APP : 23, // Default - (Similar to the iOS app icon badge size)
+	TAB : 18, // Default - (Similar to the small iOS tab badge size)
+	APP : 23, // (Similar to the iOS app icon badge size)
 	BIG : 27,
 	MAX : 30
 };
@@ -106,7 +106,7 @@ var normalizeBadgeHeight = function(height) {
 			result = 30;
 		}
 	} else {
-		result = exports.APP;
+		result = exports.TAB;
 	}
 	return result;
 };
@@ -152,7 +152,7 @@ exports.Badge = function(params) {
 	
 	// The configuration.
 	var value = 1,
-		badgeHeight = exports.size.APP,
+		badgeHeight = exports.size.TAB,
 		badgeShape = exports.shape.ROUND,
 		useBorder = true,
 		useShading = true,

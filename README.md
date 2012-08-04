@@ -2,7 +2,7 @@
 
 ### _A CommonJS module for Titanium mobile applications._
 
-This module provides the ability to create application badges for use across iOS, Android, and MobileWeb. The default configuration visually mimics the red iOS badge, but the styling can be configured further if desired.
+This module provides the ability to create application badges for use across iOS, Android, and MobileWeb. The default configuration visually mimics the iOS badge, but the styling can be configured further if desired.
 
 - This [Screen Capture](http://www.screencast.com/t/w9thj67Ei) shows a sample app using the `Badge` module.
 
@@ -15,7 +15,7 @@ var Badge = require('Badge');
 ```
 
 Create a new badge and attach it to the `View` for which it is associated.  
-_(By default, it will visually resemble the standard red iOS badge.)_
+_(By default, it will visually resemble the standard red iOS tab-sized badge.)_
 ```javascript
 // Create a badge and attach it to a fake Tab View.
 var badge1 = new Badge.Badge();
