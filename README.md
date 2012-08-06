@@ -42,7 +42,7 @@ var badge2 = new Badge.Badge({
 	shape : Badge.shape.SQUARE,
 	color : Badge.color.GREEN,
 	useBorder : false,
-	userShading : false
+	useShading : false
 });
 badge2.attachToView(fakeTab2);
 
