@@ -20,7 +20,7 @@
  * 	       value : 17,
  *         top : 5,
  *         right : 5,
- *         size : Badge.size.TAB,
+ *         size : Badge.size.APP,
  *         shape : Badge.shape.SQUARE,
  *         color : Badge.color.GREEN
  *     });
@@ -231,10 +231,10 @@ exports.Badge = function(params) {
 		applyValue(null);
 	}
 	var show = function() {
-		(badgeLabel.text !== null) && containerView.show();
+		(badgeLabel.text !== null) && (containerView.visible = true);
 	};
 	var hide = function() {
-		containerView.hide();
+		containerView.visible = false;
 	};
 	
 	// Create the Views.
